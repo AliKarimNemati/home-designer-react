@@ -3,8 +3,9 @@ import OurProducts from "../ourProducts/ourProducts";
 import AboutUs from "../aboutUs/aboutUs";
 import NewMaterials from "../newMaterials/newMaterials";
 import ContactUs from "../contactUs/contactUs";
+
 function home() {
-    return(
+    return (
         <>
             <div className="d-flex flex-wrap p-5 mt-5 ps-md-0">
                 <div className="col-md-6 col-12 text-center">
@@ -52,37 +53,6 @@ function home() {
             <AboutUs/>
             <NewMaterials/>
             <ContactUs/>
-
-            {/*Modal */}
-            <div
-                className="modal fade"
-                id="shopingitems"
-                data-bs-backdrop="static"
-                data-bs-keyboard="false"
-                tabIndex="-1"
-                aria-labelledby="staticBackdropLabel"
-                aria-hidden="true"
-            >
-                <div className="modal-dialog">
-                    <div className="modal-content">
-                        <div className="modal-header">
-                            <button
-                                type="button"
-                                className="btn-close"
-                                data-bs-dismiss="modal"
-                                aria-label="Close"
-                            ></button>
-                        </div>
-                        <div className="modal-body">
-                        </div>
-                        <div className="text-center">
-                            <a className="btn btn-secondary ps-4 pe-4 rounded-0 mb-3" href="/store">
-                                Buy Now
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </>
     )
 }
